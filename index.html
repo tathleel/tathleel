@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tathleel SignSense is an AI accessibility platform for real-time sign language recognition, translation, and inclusive communication."
+    />
+    <title>Tathleel SignSense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Tathleel SignSense home">
+        <span class="brand-mark">T</span>
+        <span>
+          <strong>Tathleel</strong>
+          <small>SignSense</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#technology">Technology</a>
+        <a href="#leadership">Leadership</a>
+      </nav>
+
+      <a class="nav-action" href="#contact">
+        <i data-lucide="mail"></i>
+        <span>Contact</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+      <a href="#platform">Platform</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#technology">Technology</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-signsense.png" alt="AI sign language recognition interface" />
+        <div class="hero-shade"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <div class="eyebrow">
+            <i data-lucide="sparkles"></i>
+            AI accessibility platform
+          </div>
+          <h1 id="hero-title">Tathleel SignSense</h1>
+          <p>
+            Real-time sign language recognition and translation for classrooms, clinics, service desks,
+            and public-sector teams that need communication to feel immediate.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#platform">
+              <span>View Platform</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a class="button ghost" href="#contact">
+              <i data-lucide="calendar-check"></i>
+              <span>Book a Demo</span>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="overview-strip" aria-label="Platform highlights">
+        <div>
+          <strong>Arabic SL</strong>
+          <span>Research-focused recognition</span>
+        </div>
+        <div>
+          <strong>&lt; 250 ms</strong>
+          <span>Designed for instant response</span>
+        </div>
+        <div>
+          <strong>API-ready</strong>
+          <span>Built for institutional workflows</span>
+        </div>
+      </section>
+
+      <section id="platform" class="section split-section">
+        <div class="section-media reveal">
+          <img src="assets/about-lab.png" alt="AI accessibility research visualization" />
+        </div>
+        <div class="section-copy reveal">
+          <span class="section-kicker">Platform</span>
+          <h2>AI that turns visual language into shared understanding.</h2>
+          <p>
+            SignSense combines computer vision, multimodal language models, and Arabic sign language
+            research to detect gestures, interpret context, and deliver readable translations in real time.
+          </p>
+          <p>
+            The platform is shaped for everyday environments: a reception desk, a lecture hall, a telehealth
+            appointment, or a government service counter where communication needs to be fast and respectful.
+          </p>
+          <div class="capability-list">
+            <span><i data-lucide="shield-check"></i> Privacy-aware deployment</span>
+            <span><i data-lucide="languages"></i> Arabic-first translation</span>
+            <span><i data-lucide="radio"></i> Edge and cloud inference</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section light-band">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Solutions</span>
+          <h2>Recognition, translation, and interfaces in one product layer.</h2>
+          <p>
+            Each module can stand alone or connect through a shared API for teams building accessible
+            digital and physical services.
+          </p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card reveal">
+            <img src="assets/recognition.png" alt="Sign recognition computer vision scene" />
+            <div>
+              <i data-lucide="scan-line"></i>
+              <h3>Gesture Recognition</h3>
+              <p>Detects hand shapes, movement, facial expression, and signing tempo with confidence scoring.</p>
+              <span>Computer vision</span>
+            </div>
+          </article>
+
+          <article class="solution-card reveal">
+            <img src="assets/translation.png" alt="Sign language translation product visualization" />
+            <div>
+              <i data-lucide="message-square-text"></i>
+              <h3>Live Translation</h3>
+              <p>Converts recognized signs into Arabic or English text streams for service teams and captions.</p>
+              <span>Sign to text</span>
+            </div>
+          </article>
+
+          <article class="solution-card reveal">
+            <img src="assets/interfaces.png" alt="Accessible interface dashboard visualization" />
+            <div>
+              <i data-lucide="panels-top-left"></i>
+              <h3>Accessible Interfaces</h3>
+              <p>Embeds translation into kiosks, dashboards, web apps, and call-center tools through a clean API.</p>
+              <span>API integration</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="technology" class="section technology-band">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Technology</span>
+          <h2>Built around multimodal signals, not isolated gestures.</h2>
+          <p>
+            Sign language carries meaning through hands, face, posture, motion, and timing. The technology layer
+            reads those signals together.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-item reveal">
+            <i data-lucide="cpu"></i>
+            <h3>Vision Models</h3>
+            <p>Pose estimation, hand tracking, and temporal recognition tuned for signing movement.</p>
+          </article>
+          <article class="tech-item reveal">
+            <i data-lucide="brain-circuit"></i>
+            <h3>Language AI</h3>
+            <p>Context-aware translation that keeps sentence intent readable for hearing teams.</p>
+          </article>
+          <article class="tech-item reveal">
+            <i data-lucide="database"></i>
+            <h3>Arabic SL Data</h3>
+            <p>Dataset pipelines designed for annotation quality, review, and domain adaptation.</p>
+          </article>
+          <article class="tech-item reveal">
+            <i data-lucide="timer"></i>
+            <h3>Low Latency</h3>
+            <p>Optimized inference paths for kiosk, browser, and edge-device deployments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="leadership" class="section leadership-section">
+        <div class="leader-badge reveal" aria-hidden="true">HL</div>
+        <div class="leader-copy reveal">
+          <span class="section-kicker">Leadership</span>
+          <h2>Research leadership with a product mandate.</h2>
+          <p>
+            Tathleel is led by Dr. Hamzah Luqman, founder and CEO, and informed by work from the Arabic
+            Sign Language Processing Lab at KFUPM. The goal is practical accessibility technology with
+            research-grade care.
+          </p>
+          <div class="leader-points">
+            <span><i data-lucide="graduation-cap"></i> AraSLP Lab direction</span>
+            <span><i data-lucide="file-badge"></i> Peer-reviewed AI research</span>
+            <span><i data-lucide="globe-2"></i> Global sign-language workshops</span>
+          </div>
+          <a class="button secondary" href="https://hamzah-luqman.github.io/AraSLP/index.html" target="_blank" rel="noopener noreferrer">
+            <span>Visit AraSLP Lab</span>
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-copy reveal">
+          <span class="section-kicker">Contact</span>
+          <h2>Bring accessible communication into your next service flow.</h2>
+          <p>
+            Share where SignSense could help: education, healthcare, public service, research partnerships,
+            or enterprise integration.
+          </p>
+          <div class="contact-lines">
+            <a href="mailto:hluqman@kfupm.edu.sa">
+              <i data-lucide="mail"></i>
+              hluqman@kfupm.edu.sa
+            </a>
+            <span>
+              <i data-lucide="map-pin"></i>
+              Dhahran, Saudi Arabia
+            </span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="your@email.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell us about the project or integration."></textarea>
+          </label>
+          <button class="button primary form-button" type="submit">
+            <span>Send Message</span>
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top" aria-label="Tathleel SignSense home">
+        <span class="brand-mark">T</span>
+        <span>
+          <strong>Tathleel</strong>
+          <small>SignSense</small>
+        </span>
+      </a>
+      <p>© 2026 Tathleel Solutions. AI for accessible communication.</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+  </body>
+</html>
